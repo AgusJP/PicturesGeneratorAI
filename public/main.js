@@ -67,7 +67,6 @@ btn.addEventListener("click", async () => {
     gridContainer.appendChild(figure);
   }
 
-  try {
     //Fetching data from our endpoint
     const res = await fetch(
       "https://dalle2-pictures-generator.onrender.com/generate-image",
@@ -83,9 +82,7 @@ btn.addEventListener("click", async () => {
       }
     );
     const data = await res.json();
-  } catch (err) {
-    console.log(`Error procesando la petición: ${err}`);
-  }
+
   //Loaders stop
   gridContainer.innerHTML = "";
 

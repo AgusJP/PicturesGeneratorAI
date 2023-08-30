@@ -6,7 +6,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.API_KEY;
 const URL = "https://api.openai.com/v1/images/generations";
 
