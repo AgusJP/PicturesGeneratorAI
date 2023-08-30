@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dall-e-2 AgustinJzp</title>
+  <link rel="icon" type="image/png" href=".\images\stars-outline.png">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <h1 class="title">
+    <span class="title__dalle">Dall-e-2</span> Pictures Generator
+  </h1>
+
+  <h2 class="subtitle">
+    make with
+    <svg width="25" height="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#8b5cf6"
+        d="m9 4l2.5 5.5L17 12l-5.5 2.5L9 20l-2.5-5.5L1 12l5.5-2.5L9 4m0 4.83L8 11l-2.17 1L8 13l1 2.17L10 13l2.17-1L10 11L9 8.83M19 9l-1.26-2.74L15 5l2.74-1.25L19 1l1.25 2.75L23 5l-2.75 1.26L19 9m0 14l-1.26-2.74L15 19l2.74-1.25L19 15l1.25 2.75L23 19l-2.75 1.26L19 23Z" />
+    </svg>
+    by Agustin.<span class="subtitle__name">Jzp</span>
+  </h2>
+
+  <div class="container__form">
+    <div class="inputAndBtn">
+      <div class="container_form_input_svg">
+        <input autocomplete="off" type="text" placeholder="Type a prompt ..." class="container_form_input" id="input" />
+        <svg class="svg-icon" width="calc(1rem * 1.1250)" height="calc(1rem * 1.1250)" viewBox="0 0 18 18">
+          <path
+            d="M13.8799 12H17.22C17.16 12.09 17.09 12.16 17.01 12.24L12.24 17.01C12.16 17.09 12.09 17.16 12 17.22V13.88C12 12.84 12.8399 12 13.8799 12ZM18 3.37V9.84998C18 10.07 17.9799 10.29 17.9299 10.5H13.8799C12.0099 10.5 10.5 12.01 10.5 13.88V17.9301C10.29 17.9801 10.0701 18 9.8501 18H3.37988C1.11988 18 0 16.87 0 14.62V3.37C0 1.12 1.11988 0 3.37988 0H14.6201C16.8801 0 18 1.12 18 3.37ZM9.75 11C9.75 10.586 9.414 10.25 9 10.25H5C4.586 10.25 4.25 10.586 4.25 11C4.25 11.414 4.586 11.75 5 11.75H9C9.414 11.75 9.75 11.414 9.75 11ZM13.75 6.5C13.75 6.086 13.414 5.75 13 5.75H5C4.586 5.75 4.25 6.086 4.25 6.5C4.25 6.914 4.586 7.25 5 7.25H13C13.414 7.25 13.75 6.914 13.75 6.5Z"
+            fill="url(#paint0_linear_2002_987)"></path>
+          <defs>
+            <linearGradient id="paint0_linear_2002_987" x1="-7.74" y1="-3.51187e-06" x2="20.3837" y2="-4.44406"
+              gradientUnits="userSpaceOnUse">
+              <stop offset="0.0001" stop-color="#FA5560"></stop>
+              <stop offset="0.499028" stop-color="#B14BF4"></stop>
+              <stop offset="1" stop-color="#4D91FF"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <button class="container_form_btn" id="btn">
+        <div>Generate</div>
+      </button>
+    </div>
+    <div class="radioAndSelect">
+      <div class="radio_images">
+        <h3>Number of images:</h3>
+        <div class="container_form_radio">
+          <input type="radio" id="picture2" name="pictures" value="2" />
+          <label for="picture2">2</label><br />
+
+          <input type="radio" id="picture3" name="pictures" value="3" />
+          <label for="picture3">3</label><br />
+
+          <input checked type="radio" id="picture4" name="pictures" value="4" />
+          <label for="picture4">4</label><br />
+
+          <input type="radio" id="picture6" name="pictures" value="6" />
+          <label for="picture6">6</label><br />
+
+          <input type="radio" id="picture8" name="pictures" value="8" />
+          <label for="picture8">8</label><br />
+        </div>
+      </div>
+      <div>
+        <h3>Style:</h3>
+        <!-- SELECT -->
+        <div class="dropdown">
+          <img src="./images/flask-outline.png" alt="style">
+          <div class="select">
+            <span class="selected">None</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>Illustration</li>
+            <li>Photography</li>
+            <li>Creative</li>
+            <li>Dynamic</li>
+            <li>Anime</li>
+            <li class="active">None</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid_container" id="grid_container"></div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
